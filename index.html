@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Acesso Restrito</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="text-align:center; font-family:Arial; margin-top:50px;">
+
+<h2>🔒 Acesso Restrito</h2>
+
+<input type="password" id="senha" placeholder="Digite a senha">
+<br><br>
+
+<button onclick="verificar()">Entrar</button>
+
+<script>
+function verificar() {
+    var senha = document.getElementById("senha").value;
+    if(senha === "@Motoca26") {
+        window.location.href = "https://tagmotocaprivado.carrd.co";
+    } else {
+        alert("Senha incorreta");
+    }
+}
+</script>
+
+</body>
+</html>
