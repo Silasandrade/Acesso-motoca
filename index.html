@@ -1,24 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Acesso Restrito</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acesso Restrito</title>
 </head>
 
-<body style="text-align:center; font-family:Arial; margin-top:50px;">
+<body style="
+    margin:0;
+    font-family: Arial;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('COLE_AQUI_O_LINK_DO_BACKGROUND');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+">
+
+<div style="
+    background:#000;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    color:#ffff00;
+    width:90%;
+    max-width:350px;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+">
 
 <h2>🔒 Acesso Restrito</h2>
 
-<input type="password" id="senha" placeholder="Digite a senha">
+<input type="password" id="senha" placeholder="Digite a senha" style="
+    padding:10px;
+    width:100%;
+    border:none;
+    border-radius:10px;
+    margin-top:15px;
+">
+
 <br><br>
 
-<button onclick="verificar()">Entrar</button>
+<button onclick="verificar()" style="
+    padding:12px;
+    width:100%;
+    border:none;
+    border-radius:10px;
+    background:#ffff00;
+    color:#000;
+    font-weight:bold;
+">
+Entrar
+</button>
+
+</div>
 
 <script>
 function verificar() {
     var senha = document.getElementById("senha").value;
-    if(senha === "@Motoca26") {
-        window.location.href = "https://tagmotocaprivado.carrd.co";
+    if(senha === "1234") {
+        window.location.href = "COLE_AQUI_O_LINK_DO_CARRD";
     } else {
         alert("Senha incorreta");
     }
